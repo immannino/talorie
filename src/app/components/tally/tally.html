@@ -1,8 +1,8 @@
-<mat-card [ngClass]="activeTally.colorClass" class="tc">
-    <mat-card-title>{{activeTally.name}}</mat-card-title>
-    <mat-card-content class="flex" >
+<div [ngClass]="activeTally.colorClass" class="tc w-100">
+    <div class="tc pa1 f2 white">{{activeTally.name}}</div>
+    <div class="flex justify-center" >
         <a class="f2 grow no-underline br-pill ba bw2 ph3 pv2 mr4 mb2 dib white" href="#0" (click)="tally(-1)">&#8211;</a>
         <span class="f2 white grow dib">{{getCount()}}</span>
         <a class="f2 grow no-underline br-pill ba bw2 ph3 pv2 ml4 mb2 dib white" href="#0" (click)="tally(1)">&#43;</a>
-    </mat-card-content>
-</mat-card>
+    </div>
+</div>
