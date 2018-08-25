@@ -1,0 +1,28 @@
+<div class="w-100 bg-white">
+    <div class="mw5 mw7-ns center pa3 ph5-ns">
+        <div class="flex justify-between">
+            <time class="f6 mb2 dib ttu tracked">
+                <small>24 August, 2018</small>
+            </time>
+            <div>
+                State: Unsaved
+            </div>
+        </div>
+        <dailystats class="pa5"></dailystats>
+        <div class="pa5">
+            <div class="flex justify-around">
+                <a class="f6 grow no-underline br-pill ba bw2 ph3 pv2 mb2 dib yellow" href="#0" (click)="openTally('nutrition')">Food Calories: {{state.nutrition}}</a>
+                <!-- <a class="f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-yellow" href="#0">Food Calories: {{state.nutrition}}</a> -->
+
+                <a class="f6 grow no-underline br-pill ba bw2 ph3 pv2 mb2 dib blue" href="#0" (click)="openTally('water')">Glasses of Water: {{state.water}}</a>
+                <!-- <a class="f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-blue" href="#0">Glasses of Water: {{state.water}}</a> -->
+
+                <a class="f6 grow no-underline br-pill ba bw2 ph3 pv2 mb2 dib salmon" href="#0" (click)="openTally('workout')">Workout Calories: {{state.workout}}</a>
+                <!-- <a class="f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-salmon" href="#0">Workout Calories: {{state.workout}}</a> -->
+            </div>
+            <div class="pa4">
+                <tally *ngIf="activeTally" [activeTally]="activeTally"></tally>
+            </div>
+        </div>
+    </div>
+</div>

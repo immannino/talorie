@@ -1,0 +1,10 @@
+@media screen and (min-width: 30em) {
+    .mw7-ns {
+        max-width: 52rem;
+    }
+
+    .ph5-ns {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}

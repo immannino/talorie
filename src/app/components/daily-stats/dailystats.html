@@ -1,0 +1,20 @@
+<div>
+    <mat-progress-bar mode="determinate" color="accent" [value]="getProgressBarPercentage()" class="h4"></mat-progress-bar>
+</div>
+<div class="center">
+    <div class="bg-light-gray w-100 tc">
+        <h2 class="center pt3 fw1 lh-copy">Statistics</h2>
+        <div class="tl pa2">
+            <div class="tc">
+                <!-- Total Allotted Calories: {{state.dailyCalories}} calories -->
+                {{getCaloriesLeft()}} Calories left
+            </div>
+            <div class="flex justify-center pt3">
+                <p class="pr2">Consumed: <span class="green">{{getNutritionCalculatedTotal()}}</span></p>
+                <p class="pr2 pl2">Burned: <span class="red">&#8211;{{getWorkoutCalculatedTotal()}}</span></p>
+                <p class="pr2 pl2">Net: <span class="black">{{getNetCalories()}}</span></p>
+                <p class="pl2">Water: <span class="blue">{{getWaterCalculatedTotal()}}oz</span></p>
+            </div>
+        </div>
+    </div>
+</div>

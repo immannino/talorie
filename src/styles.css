@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/purple-green.css';
+
+html { 
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lite-green {
+    color: #C3DFE0;
+}
+.bg-lite-green {
+    background-color: #C3DFE0;
+}
+
+.white {
+    color: #FFFFFF;
+}
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.blue {
+    color: #77B6EA;
+}
+.bg-blue {
+    background-color: #77B6EA;
+}
+
+.red {
+    color: #8C271E;
+}
+.bg-red {
+    background-color: #8C271E;
+}
+
+.salmon {
+    color: #EF6461;
+}
+.bg-salmon {
+    background-color: #EF6461;
+}
+
+.bg-gradient {
+    background: linear-gradient(to top right, white, #C3DFE0, #77B6EA);
+}
+
+.yellow {
+    color: gold;
+}
+
+.bg-yellow {
+    background-color: gold;
+}
